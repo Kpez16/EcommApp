@@ -1,0 +1,67 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Body
+body {
+    background-color: rgba(0,0,9,.7);
+    font-family:sans-serif;
+}
+
+//Nav Components
+.navbar-default {
+    background-color: rgba(0,0,0,.9);
+    margin: 0;
+    border: none;
+    color: white;
+}
+
+//Jumbotron Banner
+.jumbotron {
+    background-image: url('/assets/bike%20bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    padding: 0;
+}
+
+.banner-text {
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    height: 100%;
+    padding-top: 20%;
+    h1 {
+        text-transform: uppercase;
+        text-shadow: 3px 3px 4px black;
+        font-size: 4em;
+        font-weight: 600;
+    }
+    h2 {
+        color: coral;
+        text-shadow: 1px 1px 2px black;
+    }
+}
+
+.shirt-img {
+    width: 200px;
+}
+
+//Footer
+footer {
+    height: 125px;
+    background-color: cadetblue;
+    text-align: center;
+    ul {
+        padding-top: 25px;
+        li {
+            list-style: none;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
