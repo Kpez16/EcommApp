@@ -1,15 +1,15 @@
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
+      <% @products.each do |product| %>
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <% end %>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
       <% @products.each do |product| %>
-      <div class="item<%= " active" if product == @products.first %>"</div>
+      <div class="item<%= " active" if product == @products.first %>"></div>
         <%= image_tag(product.image_url) %>
       <div class="carousel-caption">
           <%= product.name %>
