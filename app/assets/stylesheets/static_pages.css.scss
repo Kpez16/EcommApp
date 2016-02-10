@@ -47,8 +47,20 @@ body {
     width: 200px;
 }
 
+//Carousel
+.carousel-caption {
+    font-size: 4em;
+    line-height: 50px;
+    color: black;
+    position: absolute;
+    top: 30%;
+}
+
 //Footer
 footer {
+    position:fixed;
+    width: 100%;
+    bottom: 0px;
     height: 125px;
     background-color: cadetblue;
     text-align: center;
