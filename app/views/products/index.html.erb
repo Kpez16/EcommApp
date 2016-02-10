@@ -1,32 +1,11 @@
 <section class="container">
-    <p id="notice"><%= notice %></p>
-
-    <h1>Our Bikes!</h1>
-    
     <div class="row">
-        <div class="col-xs-2">
-            <h3>Name</h3>
-        </div>
-        <div class="col-xs-2">
-            <h3>Description</h3>
-        </div>
-        <div class="col-xs-2">
-            <h3>Image URL</h3>
-        </div>
-        <div class="col-xs-2">
-            <h3>Colour</h3>
-        </div>
-        <div class="col-xs-2">
-            <h3>Price</h3>
-        </div>
-        <div class="col-xs-2">
-            <h3>Options</h3>
-        </div>
+        
+            <p id="notice"><%= notice %></p>
+            <h1>Our Bikes!</h1>
+            <%= render partial: "product", collection: @products %>
+            <br>
+        
     </div>
-
-    <%= render partial: "product", collection: @products %>
-
-    <br>
-
     <%= link_to 'New Product', new_product_path %>
 </section>
