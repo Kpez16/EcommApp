@@ -1,11 +1,9 @@
 <section class="container">
     <div class="row">
-        
             <p id="notice"><%= notice %></p>
             <h1>Our Bikes!</h1>
             <%= render partial: "product", collection: @products %>
             <br>
-        
     </div>
     <%= link_to 'New Product', new_product_path %>
 </section>

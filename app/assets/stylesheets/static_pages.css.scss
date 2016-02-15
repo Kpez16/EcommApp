@@ -16,9 +16,20 @@ body {
     border: none;
     color: white;
 }
-
+//Search Bar
 form {
     color: black;
+}
+
+.search {
+    padding-top: 15px !important;
+    margin-right: 15px;
+    
+    form {
+        input {
+            border-radius: 5px;
+        }
+    }
 }
 
 //Jumbotron Banner

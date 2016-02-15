@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1 {
     color: white;
+    text-align: center;
 }
 
 section {
@@ -22,4 +23,8 @@ section {
 
 .field {
     color:black;
+}
+
+form {
+    text-align: center;
 }
