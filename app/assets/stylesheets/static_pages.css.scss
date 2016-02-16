@@ -71,8 +71,21 @@ form {
     top: 30%;
 }
 
-.left carousel-control {
-    width: 10%;
+.carousel-control {
+    width: 50px;
+}
+
+//thank_you
+.thank_you {
+    color:black;
+    background: none;
+    border: none;
+    p {
+        font-size: 2.5em;
+        text-align: center;
+        color: white;
+        line-height: 1em;
+    }
 }
 
 //Footer

@@ -19,7 +19,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Bikes-n-Stuff</a>
+            <%= link_to "Bikes-n-Stuff", static_pages_index_path, class:"navbar-brand" %>
+          <!--<a class="navbar-brand" href="#">Bikes-n-Stuff</a>-->
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -36,6 +37,7 @@
                 </li>
                 <li><%= link_to "About", static_pages_about_path %></li>
                 <li><%= link_to "Products", products_path %></li>
+                <li><%= link_to "Contact", static_pages_contact_path %></li>
             </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -43,6 +45,7 @@
     
     <!--Content from individual pages goes under the yield tag-->
     <%= yield %>
+    <!-- End yield content -->
     <footer>
         <ul>
             <li><%= link_to "Home", static_pages_index_path %></li>
