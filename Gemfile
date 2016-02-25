@@ -53,3 +53,5 @@ group :production do
     gem 'pg'
 end
 
+#Devise gem for authentication
+gem 'devise'
