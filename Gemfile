@@ -53,5 +53,8 @@ group :production do
     gem 'pg'
 end
 
-#Devise gem for authentication
+# Devise gem for authentication
 gem 'devise'
+
+# CanCanCan gem for authorization
+gem 'cancancan'

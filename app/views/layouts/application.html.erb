@@ -53,7 +53,10 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
 </nav>
-    
+    <!-- flash notice for not-authorized message -->
+          <% if alert %>
+              <p id="alert" class="alert alert-info"><%= alert %></p>
+          <% end %>
     <!--Content from individual pages goes under the yield tag-->
     <%= yield %>
     <!-- End yield content -->
