@@ -11,7 +11,7 @@ body {
 
 //Nav Components
 .navbar-default {
-    background-color: rgba(0,0,0,.9);
+    background-color: coral;
     margin: 0;
     border: none;
     color: white;
@@ -32,10 +32,14 @@ form {
     }
 }
 
-//Login/Out
-.nav {
-    a {
-       color: white; 
+
+
+//Login and Out
+.collapse {
+    li {
+        a {
+           color: white !important ; 
+        }
     }
 }
 //Jumbotron Banner
