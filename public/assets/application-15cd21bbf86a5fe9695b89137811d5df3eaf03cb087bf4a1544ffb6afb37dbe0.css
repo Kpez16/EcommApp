@@ -1,0 +1,251 @@
+/* line 4, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/products.scss */
+h1 {
+  color: white;
+  text-align: center;
+}
+
+/* line 9, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/products.scss */
+section {
+  margin-bottom: 100px;
+  color: white;
+}
+/* line 12, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/products.scss */
+section a {
+  color: coral;
+  text-decoration: none;
+}
+/* line 16, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/products.scss */
+section a:hover {
+  background-color: none;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 23, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/products.scss */
+.thumbnail {
+  text-align: center;
+}
+
+/* line 27, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/products.scss */
+.field {
+  color: black;
+}
+/* line 1, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 6, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+body {
+  background-color: rgba(0, 0, 9, 0.7);
+  font-family: sans-serif;
+  color: white;
+}
+
+/* line 13, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.navbar-default {
+  background-color: coral;
+  margin: 0;
+  border: none;
+  color: white;
+}
+
+/* line 20, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+form {
+  color: black;
+}
+
+/* line 24, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.search {
+  padding-top: 15px !important;
+  margin-right: 15px;
+}
+/* line 29, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.search form input {
+  border-radius: 5px;
+}
+
+/* line 40, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.collapse li a {
+  color: white !important;
+}
+
+/* line 46, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.jumbotron {
+  background-image: url("/assets/bike%20bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  padding: 0;
+}
+
+/* line 54, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.banner-text {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding-top: 20%;
+}
+/* line 59, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.banner-text h1 {
+  text-transform: uppercase;
+  text-shadow: 3px 3px 4px black;
+  font-size: 4em;
+  font-weight: 600;
+}
+/* line 65, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.banner-text h2 {
+  color: coral;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* line 71, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.shirt-img {
+  width: 200px;
+}
+
+/* line 76, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.carousel-caption {
+  font-size: 4em;
+  line-height: 50px;
+  color: black;
+  position: absolute;
+  top: 30%;
+}
+
+/* line 84, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.carousel-control {
+  width: 50px;
+}
+
+/* line 89, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.thank_you {
+  color: black;
+  background: none;
+  border: none;
+}
+/* line 93, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+.thank_you p {
+  font-size: 2.5em;
+  text-align: center;
+  color: white;
+  line-height: 1em;
+}
+
+/* line 102, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+footer {
+  position: static;
+  width: 100%;
+  bottom: 0px;
+  height: 125px;
+  background-color: cadetblue;
+  text-align: center;
+}
+/* line 109, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+footer ul {
+  padding-top: 25px;
+}
+/* line 111, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+footer ul li {
+  list-style: none;
+}
+/* line 113, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* line 117, C:/Users/The Pezants/onedrive/webs/ruby/Career foundry/ecommapp/app/assets/stylesheets/static_pages.css.scss */
+footer ul li a:hover {
+  text-decoration: underline;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+ 
