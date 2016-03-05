@@ -7,7 +7,9 @@ h1 {
 }
 
 section {
-    margin-bottom: 100px;
+    border-radius: 6px;
+    margin-top: 25px;
+    margin-bottom: 150px;
     color: white;
     a {
         color: coral;
@@ -20,8 +22,13 @@ section {
     }
 }
 
+.product-show {
+    padding-top: 30px;
+}
+
 .thumbnail {
     text-align: center;
+    border: none;
 }
 
 .field {

@@ -22,8 +22,6 @@
             <%= link_to "Bikes-n-Stuff", static_pages_index_path, class:"navbar-brand" %>
           <!--<a class="navbar-brand" href="#">Bikes-n-Stuff</a>-->
         </div>
-          <!-- flash notice for user sign in -->
-          <p class="notice"><%= notice %></p>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -50,7 +48,9 @@
             </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-</nav>
+    </nav>
+    <!-- flash notice for user sign in -->
+          <p class="notice"><%= notice %></p>
     <!-- flash notice for not-authorized message -->
           <% if alert %>
               <p id="alert" class="alert alert-info"><%= alert %></p>
