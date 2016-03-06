@@ -11,11 +11,20 @@ body {
 
 //Nav Components
 .navbar-default {
-    background-color: coral;
+    background-color: cadetblue;
     margin: 0;
     border: none;
     color: white;
+    
+    .navbar-brand {
+        color: white !important;
+    
+        .navbar-brand:active {
+            color: black;
+        }
+    }
 }
+
 //Search Bar
 form {
     color: black;
@@ -31,8 +40,6 @@ form {
         }
     }
 }
-
-
 
 //Login and Out
 .collapse {
