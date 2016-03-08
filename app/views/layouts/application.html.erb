@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>EcommApp</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <%= csrf_meta_tags %>
-</head>
-<body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-            <%= link_to "Bikes-n-Stuff", static_pages_index_path, class:"navbar-brand" %>
-          <!--<a class="navbar-brand" href="#">Bikes-n-Stuff</a>-->
+    <head>
+      <title>EcommApp</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                    <%= link_to "Bikes-n-Stuff", static_pages_index_path, class:"navbar-brand" %>
+                  <!--<a class="navbar-brand" href="#">Bikes-n-Stuff</a>-->
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="search">
+                            <%= form_tag("/products", method: "get") do %>
+                              <%= label_tag(:q, "Search for:") %>
+                              <%= text_field_tag(:q) %>
+                              <%= submit_tag("Search") %>
+                            <% end %>
+                        </li>
+                        <li>
+                            <%= link_to "Home", static_pages_index_path, class:"active" %> 
+                        </li>
+                        <li><%= link_to "About", static_pages_about_path %></li>
+                        <li><%= link_to "Products", products_path %></li>
+                        <li><%= link_to "Contact", static_pages_contact_path %></li>
+                        <li>
+                            <% if user_signed_in? %>
+                                <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                            <% else %>
+                                <%= link_to('Login', new_user_session_path) %>
+                            <% end %>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+            <!-- flash notice for user sign in -->
+                  <p class="notice"><%= notice %></p>
+            <!-- flash notice for not-authorized message -->
+                  <% if alert %>
+                      <p id="alert" class="alert alert-info"><%= alert %></p>
+                  <% end %>
+            <!--Content from individual pages goes under the yield tag-->
+            <div class="content">
+                <%= yield %>
+            </div>
+            <!-- End yield content -->
+            <div class="footer-wrapper">
+                <footer>
+                    <ul>
+                        <li><%= link_to "Home", static_pages_index_path %></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+</ul>
+                </footer>
+            </div>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="search">
-                    <%= form_tag("/products", method: "get") do %>
-                      <%= label_tag(:q, "Search for:") %>
-                      <%= text_field_tag(:q) %>
-                      <%= submit_tag("Search") %>
-                    <% end %>
-                </li>
-                <li>
-                    <%= link_to "Home", static_pages_index_path, class:"active" %> 
-                </li>
-                <li><%= link_to "About", static_pages_about_path %></li>
-                <li><%= link_to "Products", products_path %></li>
-                <li><%= link_to "Contact", static_pages_contact_path %></li>
-                <li>
-                    <% if user_signed_in? %>
-                        <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-                    <% else %>
-                        <%= link_to('Login', new_user_session_path) %>
-                    <% end %>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <!-- flash notice for user sign in -->
-          <p class="notice"><%= notice %></p>
-    <!-- flash notice for not-authorized message -->
-          <% if alert %>
-              <p id="alert" class="alert alert-info"><%= alert %></p>
-          <% end %>
-    <!--Content from individual pages goes under the yield tag-->
-    <%= yield %>
-    <!-- End yield content -->
-    <footer>
-        <ul>
-            <li><%= link_to "Home", static_pages_index_path %></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </footer>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</body>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </body>
 </html>

@@ -2,11 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+//html
+html {
+    height: 100%;
+}
 //Body
 body {
     background-color: rgba(0,0,9,.7);
     font-family:sans-serif;
     color: white;
+    height: 100%;
+    overflow: auto;
+}
+
+//wrapper
+.wrapper {
+    min-height: 100% !important;
+    position: relative;
+}
+
+.content {
+    padding-bottom: 125px;
 }
 
 //Nav Components
@@ -80,6 +97,10 @@ form {
 }
 
 //Carousel
+.carousel-indicators {
+    
+}
+
 .carousel-caption {
     font-size: 4em;
     line-height: 50px;
@@ -107,9 +128,10 @@ form {
 
 //Footer
 footer {
-    position:fixed;
+    position: absolute;
     width: 100%;
-    bottom: 0px;
+    bottom: 0;
+    left: 0;
     height: 125px;
     background-color: cadetblue;
     text-align: center;
@@ -122,7 +144,8 @@ footer {
                 text-decoration: none;
             }
             a:hover {
-                text-decoration: underline;
+                text-decoration: none;
+                color: coral;
             }
         }
     }
