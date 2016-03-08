@@ -5,6 +5,8 @@
             <p class="thumbnail">
                 <%= image_tag(@product.image_url, width: "400") %>
             </p>
+            <%= link_to 'Edit', edit_product_path(@product) %> |
+            <%= link_to 'Back', products_path %>
         </div>
         <div class="col-xs-4">
             <p>
@@ -33,13 +35,14 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <%= render 'new_comment' %>
         </div>
-        <div class="col-md-6">
+    </div>
+    <div class="row">
+        <div class="col-md-12">
             <%= render 'comments' %>
         </div>
     </div>
-    <%= link_to 'Edit', edit_product_path(@product) %> |
-    <%= link_to 'Back', products_path %>
+    <%= will_paginate @comments %>
 </section>
