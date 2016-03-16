@@ -4,6 +4,7 @@ describe UsersController, :type => :controller do
     
     before do
         @user = User.create!(email: "kpez16@gmail.com", password: "kixalot16")
+        @user_1 = User.create!(email: "juliapezant@gmail.com", password: "Lfc4life!")
     end
     
     describe "GET #show" do
@@ -28,4 +29,18 @@ describe UsersController, :type => :controller do
         end
     end
     
+    describe "GET #show, id: @user.id" do
+        context "User_1 is logged in trying to view user" do
+        
+            before do
+                sign_in @user_1
+            end
+
+            it "redirects to login" do
+                get :show, id: @user.id
+                expect(response).to redirect_to(root_path)
+            end
+        end
+    end
+        
 end
