@@ -40,6 +40,7 @@ group :development, :test do
     gem 'guard-rspec', require: false
     gem 'spork-rails'
     gem 'guard-spork'
+    gem 'stripe'
 end
 
 group :development do
