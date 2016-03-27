@@ -5,7 +5,10 @@
 
     <%= form_tag("/static_pages/thank_you") do %>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 col-md-offset-3">
+            <%= image_tag("Bicycle.png", class: "Bicycle-Img img-responsive img-circle") %>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
             <div class="form-group">
                 <%= label_tag :name, "Name" %>
                 <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
@@ -20,9 +23,6 @@
             </div>
             <%= submit_tag "Send" %>
             <% end %>
-        </div>
-        <div class="col-md-6">
-        <%= image_tag("Bicycle.png", class: "Bicycle-Img") %>
         </div>
     </div>
 </section>
