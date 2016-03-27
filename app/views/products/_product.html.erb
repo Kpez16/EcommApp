@@ -9,9 +9,11 @@
         <p><a href="#" class="btn btn-primary" role="button">Buy!</a> <a href="#" class="btn btn-default" role="button">Details</a></p>
       </div>
       <div class="Options">
-    <%= link_to 'Show', product %>
-    <%= link_to 'Edit', edit_product_path(product) %>
-    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <% if signed_in? && current_user.admin? %>
+            <%= link_to 'Show', product %>
+            <%= link_to 'Edit', edit_product_path(product) %>
+            <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <% end %>
       </div>
     </div>
 </div>

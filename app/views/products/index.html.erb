@@ -5,5 +5,7 @@
             <%= render partial: "product", collection: @products %>
             <br>
     </div>
-    <%= link_to 'New Product', new_product_path %>
+    <% if signed_in? && current_user.admin? %>
+        <%= link_to 'New Product', new_product_path %>
+    <% end %>
 </section>
