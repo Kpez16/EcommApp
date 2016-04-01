@@ -46,6 +46,11 @@
                                 <%= link_to('Login', new_user_session_path) %>
                             <% end %>
                         </li>
+                        <li>
+                            <% if signed_in? && current_user.admin? %>
+                                <%= link_to "Users", users_path %>
+                            <% end %>
+                        </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
