@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+    before_action :set_comment, only: [:show, :edit, :update, :destroy]
+    before_filter :authenticate_user!
     def create
         @product = Product.find(params[:product_id])
         @comment = @product.comments.new(comment_params)
@@ -7,6 +9,7 @@ class CommentsController < ApplicationController
             if @comment.save
                 format.html { redirect_to @product, notice: 'Review was created succesfully.' }
                 format.json { render :show, status: :created, location: @product }
+                format.js
             else
                 format.html { redirect_to @product, alert: 'Review was not saved successfully.' }
                 format.json { render json: @comment.errors, status: :unprocessable_entity }
