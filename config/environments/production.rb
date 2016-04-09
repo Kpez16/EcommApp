@@ -14,7 +14,7 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
     # Memcached for Heroku production
-    config.cache_store = :dalli_store,
+  config.cache_store = :dalli_store,
         (ENV["MEMCACHIER_SERVERS"] || "").split(","),
     {:username => ENV["MEMCACHIER_USERNAME"],
     :password => ENV["MEMCACHIER_PASSWORD"],

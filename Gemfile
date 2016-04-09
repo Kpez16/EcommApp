@@ -44,6 +44,7 @@ group :development, :test do
     gem 'brakeman', :require => false
     gem 'angularjs-rails'
     gem 'dalli'
+    gem 'memcachier'
 end
 
 group :development do
