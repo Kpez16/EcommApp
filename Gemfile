@@ -43,6 +43,7 @@ group :development, :test do
     gem 'stripe'
     gem 'brakeman', :require => false
     gem 'angularjs-rails'
+    gem 'dalli'
 end
 
 group :development do

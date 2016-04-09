@@ -1,9 +1,11 @@
 <section class="container">
     <div class="row show-row">
-            <p id="notice"><%= notice %></p>
-            <h1>Our Bikes!</h1>
-            <%= render partial: "product", collection: @products %>
-            <br>
+        <p id="notice"><%= notice %></p>
+        <h1>Our Bikes!</h1>
+        <% cache(cache_key_for_products) do %>
+            <%= render @products %>
+        <% end %>
+        <br>
     </div>
     <% if signed_in? && current_user.admin? %>
         <%= link_to 'New Product', new_product_path %>
