@@ -12,12 +12,12 @@ Rails.application.configure do
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
-  #config.action_controller.perform_caching = true
+  config.action_controller.perform_caching = true
     # Memcached for Heroku production
   config.cache_store = :dalli_store,
-        (ENV["MEMCACHIER_SERVERS"] || "").split(","),
-    {:username => ENV["MEMCACHIER_USERNAME"],
-    :password => ENV["MEMCACHIER_PASSWORD"],
+        (ENV["mc5.dev.ec2.memcachier.com:11211"] || "").split(","),
+    {:username => ENV["057bdd"],
+    :password => ENV["b5cb14d211bbf3cda87402e4849d74f7"],
     :failover => true,
     :socket_timeout => 1.5,
     :socket_failure_delay => 0.2
