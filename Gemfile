@@ -60,8 +60,6 @@ gem 'coffee-script-source', '1.8.0'
 group :production do
     gem 'rails_12factor'
     gem 'pg'
-    gem 'dalli'
-    gem 'memcachier'
 end
 
 # Devise gem for authentication
@@ -72,3 +70,6 @@ gem 'cancancan'
 
 # will_paginate gem
 gem 'will_paginate', '~> 3.0.5'
+
+#Dalli
+gem 'dalli'
