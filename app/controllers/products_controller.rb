@@ -13,7 +13,7 @@ class ProductsController < ApplicationController
             if Rails.env.development?
             @products = Product.where("name LIKE ?", "%#{search_term}%")
             end
-          
+          #Production
             if Rails.env.production?
             @products = Product.where("name ilike ?", "%#{search_term}%")
             end
