@@ -43,8 +43,6 @@ group :development, :test do
     gem 'stripe'
     gem 'brakeman', :require => false
     gem 'angularjs-rails'
-    gem 'dalli'
-    gem 'memcachier'
 end
 
 group :development do
@@ -62,6 +60,8 @@ gem 'coffee-script-source', '1.8.0'
 group :production do
     gem 'rails_12factor'
     gem 'pg'
+    gem 'dalli'
+    gem 'memcachier'
 end
 
 # Devise gem for authentication
