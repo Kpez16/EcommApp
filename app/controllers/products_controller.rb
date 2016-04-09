@@ -1,15 +1,19 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-    respond_to :json, :html
+  before_filter :authenticate_user!, except: [:index, :show]
+  load_and_authorize_resource
+  respond_to :json, :html
 
   # GET /products
   # GET /products.json
   def index
       if params[:q]
         search_term = params[:q]
+          # Return our filtered list here
             if Rails.env.development?
             @products = Product.where("name LIKE ?", "%#{search_term}%")
             end
+          
             if Rails.env.production?
             @products = Product.where("name ilike ?", "%#{search_term}%")
             end

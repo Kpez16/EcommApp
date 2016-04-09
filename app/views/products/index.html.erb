@@ -2,9 +2,9 @@
     <div class="row show-row">
         <p id="notice"><%= notice %></p>
         <h1>Our Bikes!</h1>
-        <% cache(cache_key_for_products) do %>
+        <% # cache(cache_key_for_products) do %>
             <%= render @products %>
-        <% end %>
+        <% # end %>
         <br>
     </div>
     <% if signed_in? && current_user.admin? %>
