@@ -42,7 +42,6 @@ group :development, :test do
     gem 'guard-spork'
     gem 'stripe'
     gem 'brakeman', :require => false
-    gem 'angularjs-rails'
 end
 
 group :development do
@@ -76,3 +75,6 @@ gem 'dalli'
 
 #Redis-Rails
 gem 'redis-rails'
+
+#Angularjs-Rails 
+gem 'angularjs-rails'
