@@ -79,7 +79,7 @@ gem 'redis-rails'
 
 #Angularjs-Rails 
 gem 'angularjs-rails'
-=======
+
 #Redis
 gem 'redis-rails'
 
