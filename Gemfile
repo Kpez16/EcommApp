@@ -73,7 +73,7 @@ gem 'will_paginate', '~> 3.0.5'
 #Dalli
 gem 'dalli'
 
-<<<<<<< HEAD
+
 #Redis-Rails
 gem 'redis-rails'
 
@@ -82,4 +82,4 @@ gem 'angularjs-rails'
 =======
 #Redis
 gem 'redis-rails'
->>>>>>> redis
+
