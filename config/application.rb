@@ -25,10 +25,12 @@ module EcommApp
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
 <<<<<<< HEAD
+      if Rails.env.development?
       config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
+      end
 =======
-      
-    config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
+          if Rails.env.production?
+    config.cache_store = :redis_store, 'REDIS_URL'
 
 >>>>>>> redis
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
