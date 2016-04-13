@@ -40,7 +40,6 @@ group :development, :test do
     gem 'guard-rspec', require: false
     gem 'spork-rails'
     gem 'guard-spork'
-    gem 'stripe'
     gem 'brakeman', :require => false
 end
 
@@ -61,6 +60,9 @@ group :production do
     gem 'pg'
 end
 
+#Stripe
+gem 'stripe'
+
 # Devise gem for authentication
 gem 'devise'
 
@@ -73,13 +75,8 @@ gem 'will_paginate', '~> 3.0.5'
 #Dalli
 gem 'dalli'
 
-
 #Redis-Rails
 gem 'redis-rails'
 
 #Angularjs-Rails 
 gem 'angularjs-rails'
-
-#Redis
-gem 'redis-rails'
-
